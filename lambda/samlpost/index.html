@@ -384,6 +384,10 @@
     }
 
     function consoleSignIn(awsAccount) {
+
+      $.ajax({
+        type: "GET",
+        url: "",
       const providerArn = awsAccount.providerArn;
       const roleArn = awsAccount.roleArn;
       const sessionDuration = 21600;
